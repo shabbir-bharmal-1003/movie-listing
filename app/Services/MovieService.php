@@ -17,6 +17,11 @@ class MovieService implements MovieServiceInterface
         $this->request = $request;
     }
 
+    /**
+     * Make a api call to third party to get result
+     *
+     * @return Array
+     */
     public function getMovieData() {
         $page = $this->request->get("start");
         if($page == 0) {
