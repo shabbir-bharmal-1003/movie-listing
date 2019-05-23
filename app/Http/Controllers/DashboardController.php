@@ -30,6 +30,11 @@ class DashboardController extends Controller
         return view('home');
     }
 
+    /**
+     * Get the movie list from api
+     *
+     * @return Illuminate\Http\JsonResponse
+     */
     public function getData()
     {
 
